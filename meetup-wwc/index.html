@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--Para que salgan los acentos-->
+		<meta charset="utf-8">
+		<title>Taller de programación</title>
+	</head>
+	<body>
+       
+        <!--h1 es un tag para mencionar los titulos-->
+        <h1 id="name"></h1>
+        <h2 id='sheCodesText'></h2>
+        <h3 id='ageText'></h3>
+        <h4 id='ageText'></h4>
+        <h5 id='ageText'></h5>
+        <h6 id='ageText'></h6>
+        <script>
+            //este es el espacio para JS
+            var name = 'women who code';
+            var yourName = 'Lucia';
+            var birthday = 1982;
+            var lastName = 'Santiago'
+            var age = 6 + 2;
+            console.log('age = ' + age);
+            console.log('name = ' + name + ' ' + lastName);
+            var sheCodes = true;
+            //var newAge = prompt('Indica tu edad');
+            //alert('Tu edad es: ' + newAge);
+            var elementSheCodes = document.getElementById('sheCodesText')
+            //validar si es programadora y mostrarlo en html
+            if(sheCodes === true){
+                elementSheCodes.append('Es Programadora');
+            }else{
+                elementSheCodes.append('No es programadora');
+            }
+            //del id tal le vamos a agregar esto otro
+            var element = document.getElementById('name');
+            element.append(yourName);
+            var elementAge = document.getElementById('ageText');
+            elementAge.append(2020 - birthday);
+    
+
+        </script>
+	</body>
+</html>
