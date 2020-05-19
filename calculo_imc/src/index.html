@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcula tu IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/ico" href="/src/favicon.ico">
+
+</head>
+<body>
+    <div class="main_container">
+        <div class="inner_container">
+            <h1>Calcule su índice de masa corporal</h1>
+            <div class="box">
+                <div class="box_left">
+                    <label>Introduzca su peso (kg)</label>
+                    <input id="weight" type="number"/>
+                    <label>Introduzca su altura (m)</label>
+                    <input id="height" type="number"/> 
+                    <button id="calc_button">Calcular</button>
+                    <span id="result" title="IMC">0</span>
+                    
+                </div>
+                <div class="box_right">
+                    <span id="message" title="Aquí aparecerá tu estado de salud">Conclusión</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
