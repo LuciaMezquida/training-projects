@@ -1,52 +1,67 @@
-  <!--method especifica cómo se van a enviar los datos. action es la dirección de la página
-    o programa que va a procesar la información-->
-    <h3 id="join">Join me!</h3>
-    <p>Si te interesa mi estilo de vida y quieres unirte a el, o solo necesitas que 
-                    te odien para esforzarte a ser mejor persona.</p>
-    <form method="post" action="tratamiento.php">
-        <p><b>Si quieres unirte a mi causa, rellena el siguiente formulario:</b></p>
-        <p>
-            <fieldset>
-                <legend>Origen</legend>
-                <label for="continente">Continente de origen</label><br/>
-                <select name="continenete" id="continenete">
-                    <option value="america">América</option>
-                    <option value="europa">Europa</option>
-                    <option value="asia">Asia</option>
-                    <option value="oceania">Oceanía</option>
-                    <option value="africa">Africa</option>
-                </select>
-                <br/>
-                <label for="pais">País</label>:<br/><input type="text" name="pais" size="40" placeholder="Seven Kingdoms" id="pais" autofocus required/>
-                <br/>
-                <label for="email">Email</label>:<br/><input type="email" name="email" size="40" placeholder="muka@theworldismine.com" ></code>
-                <br/>
-                <label for="url">Direccion web</label>:<br/><input type="url" name="url" size="40"></code>
-                <br/>
-                <label for="tel">Telefono de contacto</label>:<br/><input type="tel" name="tel" required></code>
-                <br/>
-            </fieldset>
-            <fieldset>
-                <legend>Uranio</legend>
-                    <label for="uranio">Posesión de uranio</label>:<br/>
-                    <input type="radio" name="uranio" value="uranio_yes" id="uranio_yes"/><label for="yes">Si</label><br/>
-                    <input type="radio" name="uranio" value="uranio_no" id="uranio_no"/><label for="no">No</label><br/>
-                    <input type="radio" name="uranio" value="unknown" id="unknown"/><label for="nsnc">NsNc</label>
-                    <br/>
-                    <label for="number">En caso afirmativo, especifique unidades</label>:<br/><input type="number"></code>
-                    <br/>
-                    <label for="date">Antigüedad del uranio</label>:<br/><input type="date" ></code>
-                    <br/>
-            </fieldset>
-            <fieldset>
-                <legend>Motivos</legend>
-                    <label for="reasons">Razones para una alianza (se breve)</label>:<br/>
-                    <textarea name="reasons" id="reasons" rows="10" cols="60"></textarea><br/>
-            </fieldset>
-        </p>
-        
-        <input type="submit" value="Enviar"/>
-        <input type="reset" value="Reset" ></code>
-
-    </form>
-    <script src="../js/scripts.js"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="shortcut icon" type="image/ico" href="/images/cat-butt.ico">
+        <title>Muka-Contacto</title>
+    </head>
+    <body>
+        <h3 id="join">Join me!</h3>
+        <p>Si te interesa mi estilo de vida y quieres unirte a el, o solo necesitas que 
+                        te odien para esforzarte a ser mejor persona.</p>
+                        <!--method especifica cómo se van a enviar los datos. action es la dirección de la página
+        o programa que va a procesar la información-->
+        <div class="form">
+            <form method="post" action="tratamiento.php">
+                <p><b>Si quieres unirte a mi causa, rellena el siguiente formulario:</b></p>
+                <p>
+                    <fieldset>
+                        <legend>Origen</legend>
+                        <label for="continente">Continente de origen</label><br/>
+                        <select name="continenete" id="continenete">
+                            <option value="america">América</option>
+                            <option value="europa">Europa</option>
+                            <option value="asia">Asia</option>
+                            <option value="oceania">Oceanía</option>
+                            <option value="africa">Africa</option>
+                        </select>
+                        <br/>
+                        <label for="pais">País</label>:<br/><input type="text" name="pais" size="40" placeholder="Seven Kingdoms" id="pais" autofocus required/>
+                        <br/>
+                        <label for="email">Email</label>:<br/><input type="email" name="email" size="40" placeholder="muka@theworldismine.com" ></code>
+                        <br/>
+                        <label for="url">Direccion web</label>:<br/><input type="url" name="url" size="40"></code>
+                        <br/>
+                        <label for="tel">Telefono de contacto</label>:<br/><input type="tel" name="tel" required></code>
+                        <br/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Uranio</legend>
+                            <label for="uranio">Posesión de uranio</label>:<br/>
+                            <input type="radio" name="uranio" value="uranio_yes" id="uranio_yes"/><label for="yes">Si</label><br/>
+                            <input type="radio" name="uranio" value="uranio_no" id="uranio_no"/><label for="no">No</label><br/>
+                            <input type="radio" name="uranio" value="unknown" id="unknown"/><label for="nsnc">NsNc</label>
+                            <br/>
+                            <label for="number">En caso afirmativo, especifique unidades</label>:<br/><input type="number"></code>
+                            <br/>
+                            <label for="date">Antigüedad del uranio</label>:<br/><input type="date" ></code>
+                            <br/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Motivos</legend>
+                            <label for="reasons">Razones para una alianza (se breve)</label>:<br/>
+                            <textarea name="reasons" id="reasons" rows="10" cols="60"></textarea><br/>
+                    </fieldset>
+                </p>
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Reset" ></code>
+            </form>
+            <button><a href="/html/index1.html">Inicio</a></button>
+        </div>
+        <script src="../js/scripts.js"></script>
+    </body>
+  </html>
+   
+   

@@ -1,21 +1,75 @@
 body{
-    background-color: rgb(232, 226, 226);
+    background-color: rgb(250, 246, 224);
     color: black;
+    font-family: monospace;
+}
+
+section h1, footer h1, nav a{
+    font-family: fantasy;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#main_container {
+    width: 1000px;
+    margin: auto;
+}
+
+#main_title{
+    display: inline-block;
+}
+
+header h1 {
+    color: #760001;
+    font-family: fantasy;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+#logo, header h1 {
+    display: inline-block;
+    margin-bottom: 1px;
+}
+
+header h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    margin-top: 0px;
+    font-weight: normal;
 }
 
-table{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-collapse: collapse;
-    display: table;
-    float: right;
-    margin-right: 80px;
-    caption-side: bottom;
-}
-
-form{
+.form {
     padding: 20px;
     border: 2px solid rgb(189, 146, 65);
-    width: 450px;
+    width: 533px;
     clear: both;
 }
+
+nav {
+    display: inline-block;
+    text-align: right;
+    padding-left: 55px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
