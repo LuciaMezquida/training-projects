@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(250, 246, 224);
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
     color: black;
     font-family: monospace;
 }
@@ -8,6 +8,11 @@ section h1, footer h1, nav a{
     font-family: fantasy;
     font-weight: normal;
     text-transform: uppercase;
+    font-size: 2.0em;
+}
+
+header{
+    background: url('/images/line.png') repeat-x bottom;
 }
 
 #main_container {
@@ -33,7 +38,7 @@ header h1 {
 
 header h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-top: 0px;
     font-weight: normal;
 }
@@ -48,7 +53,7 @@ header h3 {
 nav {
     display: inline-block;
     text-align: right;
-    padding-left: 55px;
+    padding-left: 90px;
     
 }
 
@@ -73,3 +78,75 @@ nav a:hover{
     border-bottom: 3px solid #760001;
 }
 
+article, aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article {
+    width: 660px;
+    margin-right: 15px;
+}
+
+article p{
+    font-size: 1.1em;
+}
+
+aside {
+    position: relative;
+    width: 274px;
+    background-color: #a39c93;
+    box-shadow: 0px 2px 5px rgb(56, 56, 56);
+    border-radius: 5%;
+    padding: 10px;
+    color: white;
+    font-size: 1.0em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#author {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#muka_picture {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 23px;
+}
+
+#muka_picture img {
+    border-radius: 50%;
+}
+
+aside img{
+    margin-right: 4px;
+}
+
+footer {
+    background: url(/images/line.png) repeat-x top;
+    margin-top: 15px;
+    padding-top: 20px;
+}
+
+#tweet, #my_pictures, #my_friends {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tweet{
+    width: 26%;
+}
+
+#my_pictures{
+    width: 41%;
+}
+
+#my_friends{
+    width: 31%;
+}
+
+
+transform: scale(1.1)
