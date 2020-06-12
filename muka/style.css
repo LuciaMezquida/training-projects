@@ -8,7 +8,8 @@ section h1, footer h1, nav a{
     font-family: fantasy;
     font-weight: normal;
     text-transform: uppercase;
-    font-size: 2.0em;
+    font-size: 1.6em;
+    color: #760001;
 }
 
 header{
@@ -22,6 +23,8 @@ header{
 
 #main_title{
     display: inline-block;
+    width: 330px;
+    line-height: 2.0em;
 }
 
 header h1 {
@@ -63,11 +66,11 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 nav a{
-    font-size: 1.3em;
+    font-size: 1.6em;
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
@@ -106,6 +109,10 @@ aside {
     margin-bottom: 15px;
 }
 
+aside h1 {
+    color: white;
+}
+
 #author {
     text-align: center;
     font-size: 1.5em;
@@ -142,6 +149,11 @@ footer {
 
 #my_pictures{
     width: 41%;
+}
+
+#pic img {
+    margin-right: 3px;
+    border-radius: 5%;
 }
 
 #my_friends{
