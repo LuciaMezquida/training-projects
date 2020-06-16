@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>Camp form</title>
+    </head>
+    <body>
+        <h1 id="title">Harry Potter Camp</h1>
+        <p id="description">Gryffindor, Ravenclaw, Hufflepuff or Slytherin… In which House do YOU belong? Start your magic adventure this summer!</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br/><input type="text" name="name" id="name" size="40" placeholder="Harry Potter" required/><br/>
+            <label for="email" id="email-label">Email</label></br><input type="email" name="email" id="email" size="40"placeholder="h.potter@howarts.uk" required/><br/>
+            <label for="age" id="number-label">Age</label></br><input type="number" name="age" id="number" min="8" max="14" size="40" placeholder="8-14" required/><br/>
+
+            <label>Select your favourite house</label></br>
+            <select name="house" id="dropdown">
+            <option value="gryffindor">Gryffindor</option>
+            <option value="slytherin">Slytherin</option>
+            <option value="ravenclaw">Ravenclaw</option>
+            <option value="hufflepuff">Hufflepuff</option>
+
+            </select></br>
+            <label>Select status</label></br>
+            <input type="radio" name="status" value="wizard"/><label for="wizard">Wizard</label><br/>
+            <input type="radio" name="status" value="muggle" id="muggle"/><label for="muggle">Muggle</label><br/>
+            <input type="radio" name="status" value="squib" id="squib"/><label for="squib">Squib</label><br/>
+        
+            <label>Select your favourite subjects</label></br>
+            <input type="checkbox" name="subjects" value="1"/>Potions</br>
+            <input type="checkbox" name="subjects" value="2"/>Astronomy</br>
+            <input type="checkbox" name="subjects" value="3"/>Charms</br>
+            <input type="checkbox" name="subjects" value="4"/>Defence Against the Dark Arts</br>
+            <input type="checkbox" name="subjects" value="5"/>Flying</br>
+            <input type="checkbox" name="subjects" value="6"/>Herbology</br>
+            <input type="checkbox" name="subjects" value="7"/>History of Magic</br>
+            <input type="checkbox" name="subjects" value="8"/>Transfiguration</br>
+            <input type="checkbox" name="subjects" value="9"/>Herbology</br>
+            <input type="checkbox" name="subjects" value="10"/>Muggle studies</br>
+            <input type="checkbox" name="subjects" value="11"/>Divination</br>
+            <input type="checkbox" name="subjects" value="12"/>Care of magical creatures</br>
+
+            <label for="comments">Comments:</label><br/><textarea name="comments" rows="10" cols="60"></textarea></br>
+
+            <input type="submit" value="submit" id="submit"/>   
+        </form>
+    </body>
+</html>
