@@ -1,0 +1,35 @@
+body {
+    background-color: beige;
+  }
+  
+  #title {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #img-caption {
+    text-align: center;
+    font-size: small;
+  }
+  
+  #img-div {
+    text-align: justify;
+    width: 500px;
+    height: 800px;
+    margin: auto;
+  }
+  
+  #img-div p {
+    margin-top: 40px;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 25px
+  }
+  
+  
+  #image {
+    max-width: 70%;
+    display: block;
+    margin: auto;
+  }
