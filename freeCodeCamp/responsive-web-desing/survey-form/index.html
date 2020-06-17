@@ -8,19 +8,21 @@
         <title>Camp form</title>
     </head>
     <body>
-      
-        <h1 id="title">Harry Potter Camp</h1>
-        <p id="description">Gryffindor, Ravenclaw, Hufflepuff or Slytherin… In which House do YOU belong? Start your magic adventure this summer!</p>
+        <div id="top">
+            <h1 id="title">Harry Potter Camp</h1>
+            <p id="description">Gryffindor, Ravenclaw, Hufflepuff or Slytherin… In which House do YOU belong? Start your magic adventure this summer!</p>
+        </div>
+        
         <div id="form">
             <form id="survey-form">
                 <fieldset id="info">
-                    <legend>Personal information</legend>
+                    <legend>PERSONAL INFORMATION</legend>
                     <label for="name" id="name-label">Name</label><br/><input type="text" name="name" id="name" size="40" placeholder="Harry Potter" required/><br/>
                     <label for="email" id="email-label">Email</label></br><input type="email" name="email" id="email" size="40"placeholder="h.potter@howarts.uk" required/><br/>
                     <label for="age" id="number-label">Age</label></br><input type="number" name="age" id="number" min="8" max="14" size="40" placeholder="8-14" required/><br/>
                 </fieldset>
 
-                <label>Select your favourite house</label></br>
+                <label>SELECT YOUR FAVOURITE HOUSE</label></br>
                 <select name="house" id="dropdown">
                 <option value="gryffindor">Gryffindor</option>
                 <option value="slytherin">Slytherin</option>
@@ -29,7 +31,7 @@
                 </select></br> 
 
                 <fieldset id="status">
-                    <legend>Status</legend>
+                    <legend>STATUS</legend>
                     <label>Select status</label></br>
                     <input type="radio" name="status" value="wizard"/><label for="wizard">Wizard</label><br/>
                     <input type="radio" name="status" value="muggle" id="muggle"/><label for="muggle">Muggle</label><br/>
@@ -38,7 +40,7 @@
 
                 <fieldset id="subjects">
                 <label>Select your favourite subjects</label></br>
-                    <legend>Subjects</legend>
+                    <legend>SUBJECTS</legend>
                     <input type="checkbox" name="subjects" value="1"/>Potions</br>
                     <input type="checkbox" name="subjects" value="2"/>Astronomy</br>
                     <input type="checkbox" name="subjects" value="3"/>Charms</br>
@@ -52,9 +54,9 @@
                     <input type="checkbox" name="subjects" value="11"/>Divination</br>
                     <input type="checkbox" name="subjects" value="12"/>Care of magical creatures</br>
                 </fieldset>
-                <label for="comments">Comments:</label><br/><textarea name="comments" rows="10" cols="60"></textarea></br>
+                <label for="comments">COMMENTS:</label><br/><textarea id="text" name="comments" rows="10" cols="60"></textarea></br>
 
-                <input type="submit" value="submit" id="submit"/>   
+                <input type="submit" value="Submit" id="submit"/>   
             </form>
         </div>
     </body>
