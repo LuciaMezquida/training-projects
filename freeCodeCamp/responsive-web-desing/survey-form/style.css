@@ -5,6 +5,7 @@
 
 body {
     background-image: url(/pergamino.jpg);
+    background-position: center;
 }
 
 #title {
@@ -45,6 +46,10 @@ body {
     font-size: 18px;
     outline-color: sienna;
     text-indent: 3px;
+}
+
+input:hover {
+    box-shadow: 10px 10px 10px rgb(219, 209, 101), -10px -10px 10px rgb(219, 209, 101);
 }
 
 
@@ -92,4 +97,9 @@ body {
     font-size: 40px;
     letter-spacing: 13px;
     box-shadow: 2px 4px 6px slategrey;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgb(219, 209, 101), -10px -10px 10px rgb(219, 209, 101);
 }
