@@ -37,7 +37,7 @@ h1{
 
 @media all and (max-width: 1024px){
     h1 {
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
 }
 
@@ -69,6 +69,8 @@ nav button{
     border-radius: 5px;
     box-shadow: 2px 3px 4px gray;
     border: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 nav button:hover{
