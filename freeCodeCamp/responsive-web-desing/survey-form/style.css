@@ -52,11 +52,6 @@ body {
     text-indent: 3px;
 }
 
-input:hover {
-    box-shadow: 10px 10px 10px rgb(219, 209, 101), -10px -10px 10px rgb(219, 209, 101);
-}
-
-
 #number {
     width: 100px;
     height: 40px;
@@ -100,11 +95,12 @@ input:hover {
     text-shadow: 2px 4px 6px slategrey;
     font-family: 'harry_p';
     font-size: 40px;
-    letter-spacing: 13px;
+    letter-spacing: 5px;
     box-shadow: 2px 4px 6px slategrey;
+    border: none;
+    margin-top: 20px;
 }
 
 #submit:hover {
     transform: scale(1.1);
-    box-shadow: 10px 10px 10px rgb(219, 209, 101), -10px -10px 10px rgb(219, 209, 101);
 }
