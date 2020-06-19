@@ -38,6 +38,12 @@
                     Many of the sprawls were specialized, emphasizing one particular sector, and through coordination with all othersprawls in the zone, a complete
                     network of information exchange and unified activity was established. All of the "below surface" facilities within the crust of the Death Star
                     were considered part of the city sprawl</p>
+                <p>Then, we can say:</p>
+                <code>
+                    const hemisphere = 2;
+                    const zones = 12;
+                    const totalZones = hemisphere * zones;
+                </code>
             </section>
             
             <section class="main-section" id="Defstat_levels">
@@ -59,7 +65,7 @@
                     activity increases, but the troops are preparing for battle and do not suspect that Rebels may
                     have actually penetrated the base.</p>
                     <ul>
-                        <li><b>DefstatZero:</b> Normal level of alertness, no change in guard posts. Two-man security guard patrols
+                        <li><b>Defstat Zero:</b> Normal level of alertness, no change in guard posts. Two-man security guard patrols
                             and remotes perform regular checks of the sector, arriving on the roll of 1 on a six-sided die (roll
                             every 10 minutes of game time). Patrols can be avoided with Easy sneak rolls. Locked doors are set at their normal difficulty
                             and require security rolls equal to or better than the difficulty number to gain access. If the security 
@@ -106,6 +112,21 @@
                             is half the difficulty number or less, the character fails and sets off an alarm, immediately alerting a
                             nearby patrol (roll a six-sided die: 1-2, security patrol; 3-5, stormtrooper squad; 6, Death Star
                             trooper squad).</li>
+                <p>Then, we can say:</p>
+                <code>
+                    const defstat = (level) => {
+                        if (level === 'Zero') {
+                            return "Normal level";
+                        } else if (level === 'One') {
+                            return "Two stormtrooper patrol";
+                        } else if (level === 'Two') {
+                            return "Guard are doubled";
+                        } else if (level === 'Three') {
+                            return "Death Star trooper squads";
+                        }
+                        return "Level not recognized";
+                    }
+                </code>
                     </ul>
                 <p>Although sprawls are the physical basis of the Death Star organization, the difficulty of penetrating 
                     security and computer systems is dependent upon the type of sector the characters are in. The dificulties are based on Defstat Zero,
@@ -177,7 +198,7 @@
                     the battle station and a great amount of leeway within the entire Imperial network.</p>
                 <p>Low-ranking officers (such as lieutenants and captains) have rank cylinders accessing Moderate 
                     information within their sector and zone. Officers of rank commander through colonel had
-                    cylinders accessing up to Very Difficult information within their sector and zone and Very Easy
+                    cylinders accessing up to Difficult information within their sector and zone and Very Easy
                     or Easy cylinders for other zones. Admirals and generals had Very Difficult cylinders for all sectors 
                     aboard their craft or fleet, while the Grand Moff had Very Difficult cylinders for all sectors
                     aboard the craft as well as at least Easy access to the entire Imperial network. The specific rank
@@ -190,6 +211,21 @@
                     security sectors. Since representatives from security are constantly monitoring the computer
                     systems of any Imperial facility, it is likely that such officers will be alerted to unauthorized
                     computer use unless the characters' efforts are inconspicuous.</p>
+                <p>Then, we can say:</p>
+                <code>
+                    const accessInfo = () => {
+                        let rank = prompt('What is your rank?');
+                        if (rank === 'liutenant' || rank === 'captain') {
+                            return "Accessing Moderate";
+                        } else if (rank === 'commander' || rank === 'colonel') {
+                            return "Accessing Difficult"
+                        } else if (rank === 'admiral' || rank === 'general') {
+                            return "Accessing Very Difficult";
+                        }
+                        return "Accessing Easy"
+                    }
+                </code>
+
             <section class="main-section" id="Computer_programming_rolls">
                 <header>Computer programming rolls</header>
                 <p>Characters attempting to manipulate the Imperial computer network have their work cut out
@@ -213,6 +249,16 @@
                     Very Easy task to open up a General Sector turbolift, although if the station is at Defstat Two,
                     that task may become Easy. For another example, it may be Very Easy to get a duty roster
                     from a General Sector terminal, but Very Difficult to get a copy of Grand Moff Tarkin's itinerary.</p>
+                <p>Then, we can say:</p>
+                <code>
+                    const bots = ['C3PO', 'R2D2', 'BB8'];
+                    const botHacker = (evilBot) => {
+                        if (evilBot === bots[1]) {
+                            return "Dangerous bot!";
+                        }
+                        return "Non dangerous bot";
+                    }
+                </code>
             </section>
             
             <section class="main-section" id="Bridges_and_doors">
@@ -231,6 +277,16 @@
                     but this automatically alerts security to the intruder's presence. A regular door has a body of
                     3D. A blast door has a body of 6D. The character must get an incapacitated result to create a hole
                     large enough to step through.</p>
+                <p>Then, we can say:</p>
+                <code>
+                    let regularDoor = true;
+                    let blastDoor = false;
+                    const checkIntruders = (numIntruders) => {
+                        if (numIntruders > 0) {
+                            blastDoor = true;
+                        }
+                    }
+                </code>
             </section>
       </main>
 </body>
