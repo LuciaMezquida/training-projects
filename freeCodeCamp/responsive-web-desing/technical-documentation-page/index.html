@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DS Technical Manual</title>
 </head>
 <body>
+    <nav id="navbar">
+        <header>DS Technical Manual</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Death_Star_Physical_Layout" class="nav-link">Death Star Physical Layout</a>
+        <a href="#Defstat_levels" class="nav-link">Defstat levels</a>
+        <a href="#Rank_cylinders" class="nav-link">Rank cylinders</a>
+        <a href="#Computer_programming_rolls" class="nav-link">Computer programming rolls</a>
+        <a href="#Bridges_and_doors" class="nav-link">Bridges and doors</a>
+    </nav>
     <main id="main-doc">
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
@@ -112,6 +122,7 @@
                             is half the difficulty number or less, the character fails and sets off an alarm, immediately alerting a
                             nearby patrol (roll a six-sided die: 1-2, security patrol; 3-5, stormtrooper squad; 6, Death Star
                             trooper squad).</li>
+                    </ul>
                 <p>Then, we can say:</p>
                 <code>
                     const defstat = (level) => {
@@ -126,8 +137,7 @@
                         }
                         return "Level not recognized";
                     }
-                </code>
-                    </ul>
+                </code> 
                 <p>Although sprawls are the physical basis of the Death Star organization, the difficulty of penetrating 
                     security and computer systems is dependent upon the type of sector the characters are in. The dificulties are based on Defstat Zero,
                     and represent the difficulty of simply accessing the Imperial computer system (characters with
