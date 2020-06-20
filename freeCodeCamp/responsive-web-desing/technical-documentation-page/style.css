@@ -18,18 +18,20 @@ body {
 #navbar header {
     text-transform: uppercase;
     font-size: 2.2em;
+    line-height: 1.6em;
 }
 
 nav a {
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
-    font-size: 1.7em;
+    font-size: 1.5em;
+    
 }
 
 #main-doc header {
     text-transform: uppercase;
-    font-size: 2.2em;
+    font-size: 2.1em;
     margin-top: 50px;
     margin-bottom: 40px;
 }
@@ -42,4 +44,54 @@ nav a {
     margin-top: 20px;
     text-align: justify;
     line-height: 1.8em;
+}
+
+@media all and (max-width: 1024px) {
+    #navbar {
+        line-height: 3.0;
+    }
+
+    #navbar header {
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+
+    nav a {
+        font-size: 1.0em;
+    }
+
+    #main-doc header {
+        text-transform: uppercase;
+        font-size: 1.4em;
+    }
+
+    #main-doc {
+        font-size: 0.8em;
+        line-height: 1.6em;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #navbar {
+        line-height: 2.0;
+    }
+
+    #navbar header {
+        font-size: 1.0em;
+        line-height: 1.4em;
+    }
+
+    nav a {
+        font-size: 0.8em;
+    }
+
+    #main-doc header {
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+
+    #main-doc {
+        font-size: 0.6em;
+        line-height: 1.6em;
+    }
 }
