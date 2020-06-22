@@ -1,6 +1,35 @@
-h1 {
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: bisque;
+}
+
+/*Navbar secction*/
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #C85604;
+    z-index: 10;
+}
+
+
+/*Header section*/
+
+h1, h2 {
     color: bisque;
     font-size: 6em;
+}
+
+#welcome-section p {
+    color: #C85604;
+    font-size: 2.5em;
+    font-weight: 200;
 }
 
 #welcome-section {
@@ -8,11 +37,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 0.1em;
     width: 100%;
-    height: 50em;
+    height: 45em;
     background-color: #618685;
     background-image: linear-gradient(190deg, #2bb6b6 0%, #3a5555 100%);
 }
+
+/*Projects section*/
 
 #projects {
     text-align: center;
@@ -38,4 +70,18 @@ h1 {
 
 img {
     display: block;
+}
+
+/*Contact section*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50em;
+    padding: 0.2em;
+    background: #3C5353;
 }
