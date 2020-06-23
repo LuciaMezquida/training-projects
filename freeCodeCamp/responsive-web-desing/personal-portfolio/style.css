@@ -70,22 +70,23 @@ h1, h2 {
 
 #projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 3em;
     width: 100%;
     max-width: 1280px;
     margin: auto;
-    margin-bottom: 6rem;
+    margin-bottom: rem;
 }
 
 .project-image {
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 7.8em);
     width: 100%;
     object-fit: cover;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
     background: #3C5353;
     position: relative;
     z-index: 1;
+    border-radius: 5%;
 }
 
 img {
@@ -98,12 +99,33 @@ img {
     font-weight: bolder;
     position: relative;
     z-index: 3;
-    margin-top: -63px;
+    margin-top: -55px;
 }
 
 #projects a {
     text-decoration: none;
 }
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 2em;
+    border-radius: 2px;
+  }
+  
+  .btn-show-all {
+    color: #73C2BE;
+    margin-top: 4em;
+    font-size: 1.5em;
+    background: #3C5353;
+    transition: background 0.5s ease-out;
+    border-radius: 5px;
+  }
+  
+  .btn-show-all:hover {
+    background: #C85604;
+    word-spacing: 0.6em;
+    transform: translateX(3px);
+  }
 
 /*Contact section*/
 
@@ -113,10 +135,58 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 99.6%;
     height: 55em;
     padding: 0.2em;
     background: #3C5353;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4em;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: bisque;
+    text-decoration: none;
+    font-size: 1.6em;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-links a:hover {
+    transform: translateY(-4px);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-details p {
+    margin-left: 5px;
+}
+
+#email:hover {
+    
+}
+
+.fab-github::before {
+    content: url(https://github.com/Latialuci/training-projects/blob/master/muka/images/github.png?raw=true);
+}
+
+.fab-twitter::before {
+    content: url(https://github.com/Latialuci/training-projects/blob/master/muka/images/twitter.png?raw=true)
+}
+
+.fab-linkedin::before {
+    content: url(https://github.com/Latialuci/training-projects/blob/master/muka/images/linkedin.png?raw=true);
+}
+
+.fab-email::before {
+    content: url(https://img.icons8.com/wired/64/000000/gmail.png);
 }
 
 
