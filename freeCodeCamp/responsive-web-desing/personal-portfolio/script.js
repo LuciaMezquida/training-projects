@@ -1,8 +1,8 @@
-function change() {
+const change = () => {
     document.getElementById("email").innerHTML = "lucia.mezquida@gmail.com";
 }
 
-function noChange() {
+const noChange = () => {
     document.getElementById("email").innerHTML = "Email";
 }
     
