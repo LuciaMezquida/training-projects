@@ -9,13 +9,23 @@ body {
 
 #navbar {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 1;
+    width: 99%;
     background: #C85604;
     z-index: 10;
+}
+
+#navbar a {
+    display: block;
+    font-size: 1.8em;
+    padding: 0.8em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: bisque;
+    font-weight: bolder;
 }
 
 
@@ -29,7 +39,9 @@ h1, h2 {
 #welcome-section p {
     color: #C85604;
     font-size: 2.5em;
-    font-weight: 200;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 2px 4px 6px black;
 }
 
 #welcome-section {
@@ -39,12 +51,16 @@ h1, h2 {
     align-items: center;
     line-height: 0.1em;
     width: 100%;
-    height: 45em;
+    height: 55em;
     background-color: #618685;
     background-image: linear-gradient(190deg, #2bb6b6 0%, #3a5555 100%);
 }
 
 /*Projects section*/
+
+#projects h2 {
+    margin-bottom: 1.7em;
+}
 
 #projects {
     text-align: center;
@@ -58,7 +74,7 @@ h1, h2 {
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: auto;
     margin-bottom: 6rem;
 }
 
@@ -66,10 +82,27 @@ h1, h2 {
     height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
+    padding-bottom: 5em;
+    background: #3C5353;
+    position: relative;
+    z-index: 1;
 }
 
 img {
     display: block;
+}
+
+.project-title {
+    font-size: 1.7em;
+    color: #73C2BE;
+    font-weight: bolder;
+    position: relative;
+    z-index: 3;
+    margin-top: -63px;
+}
+
+#projects a {
+    text-decoration: none;
 }
 
 /*Contact section*/
@@ -81,7 +114,16 @@ img {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 50em;
+    height: 55em;
     padding: 0.2em;
     background: #3C5353;
+}
+
+
+
+/*Footer section*/
+
+.copyright {
+    background: #3C5353;
+    text-align: center;
 }
