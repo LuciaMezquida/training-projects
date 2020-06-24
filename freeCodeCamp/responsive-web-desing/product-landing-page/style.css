@@ -1,3 +1,14 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 460px) {
+    html {
+        width: fit-content;
+    }
+}
+
 body{
     background: rgb(233, 233, 209);
     font-family: 'Trebuchet MS', Arial, sans-serif;
@@ -37,7 +48,7 @@ h1{
 
 @media all and (max-width: 1024px){
     h1 {
-        font-size: 2.8em;
+        font-size: 2.3em;
     }
 }
 
@@ -124,9 +135,14 @@ nav button:hover{
 }
 
 article, aside {
-    width: 527px;
+    width: 100%;
     margin: auto;
     margin-bottom: 150px;
+}
+
+#video {
+    display: block;
+    margin: auto;
 }
 
 #rooms {
@@ -164,7 +180,9 @@ article, aside {
 }
 
 #form {
-    
+    display: block;
+    margin: auto;
+    width: 550px;
     color: #2aa077;
     font-size: 1.2em;
     border-radius: 5%;
