@@ -1,6 +1,15 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width: fit-content;
+    margin: auto;
+}
+
 body {
     background-color: snow;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: fit-content;
+    margin: auto;
 }
 
 #navbar {
@@ -13,6 +22,12 @@ body {
     flex-direction: column;
     line-height: 7.0em;
     border: 1px solid black;
+}
+
+@media (max-width: 460px){
+    #navbar {
+        width: 21%;
+    }
 }
 
 #navbar header {
@@ -39,11 +54,17 @@ nav a {
 #main-doc {
     font-size: 1.1em;
     padding: 2%;
-    width: 66%;
+    width: fit-content;
     margin-left: 30%;
     margin-top: 20px;
     text-align: justify;
     line-height: 1.8em;
+}
+
+@media (max-width: 460px){
+    #main-doc {
+        margin-left: 38%;
+    }
 }
 
 code {
@@ -55,7 +76,7 @@ code {
     background-color: rgb(226, 224, 226);
 }
 
-@media all and (max-width: 1024px) {
+@media (max-width: 1024px) {
     #navbar {
         line-height: 3.0;
     }
@@ -80,7 +101,7 @@ code {
     }
 }
 
-@media all and (max-width: 720px) {
+@media (max-width: 460px) {
     #navbar {
         line-height: 2.0;
     }
