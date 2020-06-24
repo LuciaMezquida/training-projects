@@ -127,14 +127,13 @@ h1, h2 {
     transition: color 0.5s ease-out;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1024px) {
     #projects {
         padding: 6em 1em;
     }
 
     #projects-grid {
-        display: flex;
-        justify-content: center;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -159,6 +158,12 @@ img {
 @media (max-width: 1024px) {
     .project-title {
         margin-top: -30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .project-title {
+        margin-top: -25px;
     }
 }
 
@@ -227,7 +232,7 @@ img {
 }
 
 .contact-details p {
-    margin-left: 5px;
+    margin: 13px 0 0 9px;
 }
 
 .fab-github::before {
