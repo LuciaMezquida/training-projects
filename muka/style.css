@@ -2,9 +2,11 @@ body{
     background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
     color: black;
     font-family: monospace;
+    width: fit-content;
+    margin: auto;
 }
 
-section h1, footer h1, nav a{
+section h1, footer h1, #header h3, nav a{
     font-family: fantasy;
     font-weight: normal;
     text-transform: uppercase;
@@ -102,7 +104,7 @@ article {
     margin-right: 22px;
 }
 
-article p{
+article p, .form {
     font-size: 1.1em;
 }
 
@@ -173,4 +175,114 @@ footer {
 #my_friends{
     width: 31%;
 }
+
+/*Form*/
+
+#header {
+    text-align: center;
+    padding: 10%;
+    line-height: 1.5em;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+    line-height: 1.9em;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.legend {
+    font-size: 1.3em;
+}
+
+#continente {
+    width: 30%;
+    height: 30px;
+    outline-color: #760001;
+    text-indent: 3px;
+    margin-bottom: 10px;
+}
+
+.text {
+    width: 90%;
+    height: 30px;
+    outline-color: #760001;
+    text-indent: 3px;
+    margin-bottom: 10px;
+}
+
+#tel {
+    width: 30%;
+    height: 30px;
+    outline-color: #760001;
+    text-indent: 3px;
+    margin-bottom: 10px;
+}
+
+#number {
+    width: 30%;
+    height: 30px;
+    outline-color: #760001;
+    text-indent: 3px;
+    margin-bottom: 10px;
+}
+
+#date {
+    width: 30%;
+    height: 30px;
+    outline-color: #760001;
+    text-indent: 3px;
+    margin-bottom: 10px;
+}
+
+#reasons {
+    width: 100%;
+    text-align: justify;
+    text-indent: 3px;
+    outline-color: #760001;
+}
+
+.button {
+    display: inline-block;
+    width: 49%;
+    height: 40px;
+    background-color: #760001;
+    color: white;
+    text-shadow: none;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    transform: translateY(4px);
+}
+
+button {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    margin: 30px 0 40px 0;
+    height: 40px;
+    background-color: #760001;
+    text-shadow: none;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+/*
+@media (max-width: 460px) {
+    #reasons {
+        width: 150%;
+    }
+}
+
 
