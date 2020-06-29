@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jugando con los formularios</title>
+  </head>
+
+  <body>
+    <form>
+      <h1>Formulario de inscripción</h1>
+      <p>
+        <label for="nombre">Nombre de usuario</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <span id="ayudaNombre"></span>
+      </p>
+      <p>
+        <label for="clave">Contraseña</label>
+        <input type="password" name="clave" id="clave" required>
+        <span id="ayudaClave"></span>
+      </p>
+      <p>
+        <label for="email">Dirección email</label>
+        <input type="email" name="email" id="email" required placeholder="user@gmail.com">
+        <span id="ayudaEmail"></span>
+      </p>
+      <p>
+        <input type="checkbox" name="confirmacion" id="confirmacion">
+        <label for="confirmacion">Envíame un email de confirmación</label>
+      </p>
+      <p>
+        <input type="radio" name="suscripcion" id="newsPromo" value="newsPromo">
+        <label for="newsPromo">Suscribirme a la newsletter y a las promociones</label>
+        <br>
+        <input type="radio" name="suscripcion" id="news" value="news">
+        <label for="news">Suscribirme sólo a la newsletter</label>
+        <br>
+        <input type="radio" name="suscripcion" id="noNewsPromo" value="noNewsPromo" checked>
+        <label for="noNewsPromo">No deseo suscribirme</label>
+        <br>
+      </p>
+      <p>
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select name="nacionalidad" id="nacionalidad">
+          <option value="ES" selected>Español</option>
+          <option value="ME">Mexicano</option>
+          <option value="AR">Argentino</option>
+          <option value="Otra">Otra</option>
+        </select>
+      </p>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Cancel">
+    </form>
+
+    <script src="../js/curso.js"></script>
+  </body>
+
+</html>

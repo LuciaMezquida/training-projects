@@ -1,0 +1,15 @@
+GET / HTTP/1.1
+Host: www.google.es
+User-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:53.0) Firefox/53.0
+Accept: text/html
+
+
+HTTP/1.1 200 OK
+Date: Fri, 26 May 2017 12:59:10 GMT
+Server: gws
+Content-type: text/html; charset=UTF-8
+
+<!doctype html>
+<html>
+  <!-- código HTML de la página  -->
+</html>

@@ -1,0 +1,18 @@
+/* Aumento del espacio a la izquierda y derecha de las sugerencias */
+.sugerencia {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* Modificación del color de la sugerencia cuando el ratón pasa por encima */
+.sugerencia:hover {
+  background-color: #ADD8E6;
+  cursor: pointer;
+}
+
+/* Posicionamiento de la lista de sugerencias debajo del campo de texto */
+#sugerencias {
+  background-color: #F8F8FF;
+  position: absolute;
+  left: 200px;
+}
