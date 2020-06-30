@@ -14,29 +14,29 @@ var preguntas = [
   },
 ];
 
-preguntas.forEach(function(e, i) {
+preguntas.forEach(function(array, indice) {
 
   // Bloque div que contiene cada una de las preguntas y el botón
-  var index = i + 1; // numeramos las respuestas a través del índice del array
-  var divElt = document.createElement("div");
-  document.getElementById("contenido").appendChild(divElt);
+  var index = indice + 1; // numeramos las respuestas a través del índice del array
+  var divElement = document.createElement("div");//creamos un elemento div
+  document.getElementById("contenido").appendChild(divElement);//lo metemos dentro del div con id 'contenido'
 
   // Párrafo con que muestra una pregunta
-  var h2Elt = document.createElement("h2");
-  h2Elt.textContent = "Pregunta " + index + ": " + e.enunciado;
-  divElt.appendChild(h2Elt);
+  var h2Element = document.createElement("h2");//creamos un elemento h2
+  h2Element.textContent = "Pregunta " + index + ": " + array.enunciado;//le añadimos el enunciado del array
+  divElement.appendChild(h2Element);//lo añadimos al div creado antes
 
   // Botón que revele la respuesta por cada pregunta
-  var botonElt = document.createElement("button");
-  botonElt.textContent = "Muestra respuesta";
-  divElt.appendChild(botonElt);
+  var botonElement = document.createElement("button");//creamos un boton
+  botonElement.textContent = "Muestra respuesta";//le añadimos contenido
+  divElement.appendChild(botonElement);//lo añadimos al div creado antes
 
   // Gestor que elimina el botón y muestra la respuesta al ser pulsado
-  botonElt.addEventListener("click", function() {
-    divElt.removeChild(botonElt);
-    var pElt = document.createElement("p");
-    pElt.textContent = e.respuesta;
-    divElt.appendChild(pElt);
+  botonElement.addEventListener("click", function() {
+    divElement.removeChild(botonElement);//borramos el boton
+    var pElement = document.createElement("p");//creamos un elemento p
+    pElement.textContent = array.respuesta;//añadimos a p la respuesta contenida en el array
+    divElement.appendChild(pElement);//añadimos p al div creado antes
   });
 
 });

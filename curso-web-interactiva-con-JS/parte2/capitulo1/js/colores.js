@@ -1,25 +1,27 @@
-var pElts = document.getElementsByTagName("p");
-
-document.addEventListener("keypress", function(event) {
-  var color = getColor(event.key.toLowerCase());
-
-  for (var i = 0; i < pElts.length; i++) {
-    pElts[i].style.color = color;
-  }
-});
+let parrafo = document.getElementsByTagName('p');
 
 function getColor(key) {
-  var color;
-  switch (key) {
+  let color;
+  switch(key) {
     case "r":
-      color = "red";
+      color = 'red';
       break;
-    case "v":
-      color = "green";
+    case 'v':
+      color = 'green';
       break;
-    case "a":
-      color = "blue";
+    case 'a':
+      color = 'blue';
       break;
   }
   return color;
 }
+
+document.addEventListener('keypress', function(event) {
+  let color = getColor(event.key.toLowerCase());
+
+  for (let i = 0; i < parrafo.length; i++) {
+    parrafo[i].style.color = color;
+    
+  }
+})
+
