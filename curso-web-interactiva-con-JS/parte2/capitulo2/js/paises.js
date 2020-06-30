@@ -23,26 +23,21 @@ var listaPaises = [
   "Bulgaria"
 ];
 
-var paisElt = document.querySelector("input");
-var sugerenciasElt = document.getElementById("sugerencias");
+let paisElement = document.querySelector('input') //accedemos al input 'apis'
+let sugerenciasElement = document.getElementById('sugerencias') //accedemos al div 'sugerencias'
 
-// Gestor del cambio de valor introducido
-paisElt.addEventListener("input", function() {
-  sugerenciasElt.innerHTML = ""; // Eliminación de la lista previa de sugerencias
-  listaPaises.forEach(function(pais) {
-    // Si el valor introducido corresponde al comienzo del nombre de algún país
-    if (pais.toLowerCase().indexOf(paisElt.value) === 0) {
-      var sugerenciaElt = document.createElement("div");
-      sugerenciaElt.classList.add("sugerencia");
-      sugerenciaElt.textContent = pais;
-      // Gestiona el clic sobre un sugerencia
-      sugerenciaElt.addEventListener("click", function (e) {
-        // Reemplaza el valor introducido por una sugestión
-        paisElt.value = e.target.textContent;
-        // Vacía la lista de sugerencias
-        sugerenciasElt.innerHTML = "";
-      });
-      sugerenciasElt.appendChild(sugerenciaElt);
-    }
-  });
+paisElement.addEventListener('input', function() {
+    sugerenciasElement.innerHTML = ''; //se elimina la lista de sugerencias
+    listaPaises.forEach(function(pais) {//pais--> el que introducimos nosotros
+      if (pais.toLowerCase().indexOf(paisElement.value) === 0) { //si la primera letra introducida corresponde con el comienzo de la lista de sugerencias
+        let sugerencia = document.createElement('div');//creamos un div para la sugerencia elegida
+        sugerencia.classList.add('sugerencia');//le damos una clase al div
+        sugerencia.textContent = pais;//le damos el valor al div de la sugerencia elegida
+        sugerencia.addEventListener('click', function(e) {//para gestionar por click sobre una sugerencia
+          paisElement.value = e.target.textContent; //reemplaza el valor introducido por el de una sugerencia
+          sugerenciasElement.innerHTML = ''; //vacía la lista de sugerencias
+        });
+        sugerenciasElement.appendChild(sugerencia);
+      }
+    });
 });
