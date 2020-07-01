@@ -1,14 +1,14 @@
-var formElt = document.querySelector("form");
+let formElemento = document.querySelector("form");//seleccionamos el elemento formulario
 
-formElt.addEventListener("submit", function(e) {
-  var clave1 = formElt.elements.clave1.value;
-  var clave2 = formElt.elements.clave2.value;
-  var regexClave = /\d+/;
-  var mensaje = "La contraseña es válida";
+formElemento.addEventListener("submit", function(e) { //añadimos un evento al hacer submit
+  let password1 = formElemento.elements.clave1.value; //seleccionamos el valor de clave1
+  let password2 = formElemento.elements.clave2.value; //seleccionamos el valor de clave2
+  let regexClave = /[0-9]/; //usamos las Expresiones Regulares para definir que queremos un numero
+  let mensaje = "La contraseña es válida";
 
-  if (clave1 === clave2) {
-    if (clave1.length >= 6) {
-      if (!regexClave.test(clave1)) {
+  if (password1 === password2) {
+    if (password1.length >= 6) { //si el password1 es menor a 6 caracteres
+      if (!regexClave.test(password1)) { //si no hay un numero en el password1
         mensaje = "La contraseña no contiene ninguna cifra";
       }
     } else {
@@ -18,7 +18,6 @@ formElt.addEventListener("submit", function(e) {
     mensaje = "Las contraseñas introducidas deben ser iguales";
   }
 
-  document.getElementById("infoClave").textContent = mensaje;
-  e.preventDefault();
-
+  document.getElementById("infoClave").textContent = mensaje; //seleccionamos el elemento p con la id infoclave para mostrar los mensajes por pantalla
+  e.preventDefault();//anulamos el comportamiento por defecto ligado al evento del nodo
 });
