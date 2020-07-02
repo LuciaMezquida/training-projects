@@ -36,7 +36,7 @@
 // });
 // // Envío de la petición
 // req.send(null);
-
+/*
 ajaxGet("http://localhost:3000/imagenes", function(respuesta) {
   // Transformación de formato JSON a JavaScript
   var imagenes = JSON.parse(respuesta);
@@ -47,3 +47,4 @@ ajaxGet("http://localhost:3000/imagenes", function(respuesta) {
     document.getElementById("imagenes").appendChild(imgElt);
   });
 });
+*/
