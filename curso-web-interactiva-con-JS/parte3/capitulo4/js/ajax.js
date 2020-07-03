@@ -1,3 +1,4 @@
+//hacemos uso de esta función cada vez que necesitemos una petición http, una petición ajax
 function ajaxGet(url, callback) {
   var req = new XMLHttpRequest();
   req.open("GET", url, true);
