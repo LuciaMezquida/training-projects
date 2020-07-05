@@ -12,6 +12,7 @@ section h1, footer h1, #header h3, nav a{
     text-transform: uppercase;
     font-size: 1.6em;
     color: #760001;
+    line-height: 25px;
 }
 
 header{
@@ -153,14 +154,32 @@ footer {
     padding-top: 20px;
 }
 
-#tweet, #my_pictures, #my_friends {
+#time, #my_pictures, #my_friends {
     display: inline-block;
     vertical-align: top;
 }
 
-#tweet{
+#time{
     width: 26%;
     line-height: 40px;
+}
+
+#temperaturaActual {
+    font-size: 1.9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -15px;
+
+}
+
+#temperaturaActual img {
+    width: 35%;
+    margin-left: 17px;
+}
+
+#prediccion {
+    font-size: 1.3em;
 }
 
 #my_pictures{
