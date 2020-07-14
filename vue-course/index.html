@@ -10,17 +10,25 @@
 <body>
     <div id="app">
         <h1 v-once>{{ title }}</h1>
-        <button v-on:click="increase(2, $event)">Click me</button>
-        <p>{{ counter }}</p>
+        <button v-on:click="increase(2, $event)">Increase</button>
+        <button v-on:click="counter++">Increase</button>
+        <p>{{ counter * 2 > 10 ? 'Greater than 10' : 'Smaller than 10' }}</p>
         <p v-on:mousemove="updateCoordinates">
             Coordinates: {{ x }} / {{ y }}
             - <span v-on:mousemove.stop="">DEAD SPOT</span>
         </p>
         <input type="text" v-on:keyup.enter="alertMe">
         <p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
-        <hr>
         <p v-html="finishedLink"></p>
+        <hr>
     </div>
+    <div id="app2">
+        <input type="text" v-model="name">
+        <p>{{ name }}</p>
+        <hr>
+    </div>
+    
+
     <script src="script.js"></script>
 </body>
 </html>
