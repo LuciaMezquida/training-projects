@@ -27,7 +27,13 @@
         <p>{{ name }}</p>
         <hr>
     </div>
-    
+    <div id="app3">
+        <button v-on:click="counter++">Increase</button>
+        <button v-on:click="counter--">Decrease</button>
+        <button v-on:click="secondCounter++">Increase second</button>
+        <p>Counter: {{ counter }} | {{ secondCounter }}</p>
+        <p>Result: {{ result() }} | {{ output }}</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
