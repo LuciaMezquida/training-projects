@@ -35,17 +35,17 @@ function checkCashRegister(price, cash, cid) {
           while (nextCoin === false && total >= coins[i]) {
               let nameOfCoin = i;
               let valueOfCoin = coins[i];
-              let quantity = Math.floor(total / valueOfCoin);
+              let quantityOfCoins = Math.floor(total / valueOfCoin);
               let totalCoinAvailable = cid[coinPosition][1];
-              if ((quantity * valueOfCoin) > totalCoinAvailable) {
-                  quantity = Math.floor(totalCoinAvailable / valueOfCoin);
+              if ((quantityOfCoins * valueOfCoin) > totalCoinAvailable) {
+                quantityOfCoins = Math.floor(totalCoinAvailable / valueOfCoin);
                   nextCoin = true;
               }
   
-              total -= (quantity * valueOfCoin);
+              total -= (quantityOfCoins * valueOfCoin);
               total = parseFloat(total).toFixed(2);
-              if (quantity !== 0) {
-                newCid.push([nameOfCoin, valueOfCoin * quantity]);
+              if (quantityOfCoins !== 0) {
+                newCid.push([nameOfCoin, valueOfCoin * quantityOfCoins]);
               }
           }
           coinPosition++;
